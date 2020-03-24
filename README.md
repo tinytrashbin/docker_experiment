@@ -16,5 +16,6 @@ Run docker:
 Native:
 
 `g++ source/compute.cpp -O3 -o build/compute && ./build/compute`
+
 `g++ source/io.cpp -O3 -o build/io && ./build/io`
 
