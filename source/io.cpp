@@ -3,6 +3,8 @@
 #include <assert.h>
 #include <fstream>
 #include "timer.hpp"
+#include <string>
+#include <stdint.h>
 
 // Create a file in "target" folder. Write O(2^n) bytes of data.
 void test_write(int n) {
@@ -37,7 +39,7 @@ int main() {
   using std::endl;
   cout << "Writing to file ... " << endl;
   MicroSecondTimer timer;
-  test_write(10);
+  test_write(14);
   int64_t time_taken = timer.GetElapsedTime();
   cout << "Time taken in writing single file = " << time_taken << " micro seconds" << endl;
   cout << "Creating files" << endl;
