@@ -9,8 +9,8 @@ In this experiment we are trying to understand the run time latency of a C++ pro
 We have two programs :
 1. source/compute.cpp - A C++ program doing heavy computation and no disk IO.
 2. source/io.cpp - A C++ program doing heavy file IO operations and negligible computation. It has two parts:
-  a.    WriteSingleFile : It writes big chuck of data in a single file.
-  b.    CreateMultipleFiles : It creates thousands of new files with minimal text in each file.
+  a.    WriteSingleFile : It writes big chuck of data in a single file (200 KB data).
+  b.    CreateMultipleFiles : It creates thousands of new files with minimal text in each file (Total 4096 files).
 
 Results
 ---------------
